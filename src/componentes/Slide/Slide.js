@@ -12,7 +12,7 @@ class MyModal extends Component {
             <Modal
                onRequestClose={onRequestClose}
                effect={Effect.Sign3D}>
-               <h1>What you input : {text}</h1>
+               {text}
                <button onClick={ModalManager.close}>Close Modal</button>
             </Modal>
          );
