@@ -178,3 +178,278 @@ button:hover {
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
 
+html, body {
+	position: relative;
+	height: 100%;
+  }
+  body {
+	background: #39454A;
+	font-family: 'Dosis', sans-serif;
+	font-size: 16px;
+	color:#000;
+	margin: 0;
+	padding: 0;
+  }
+
+  header{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  
+  .content{
+	background: #39454A!important;
+  }
+
+  .swiper-container,
+  .swiper-container2  {
+	width: 100%;
+	height: 100%;
+  }
+  .swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: -webkit-transform;
+	-o-transition-property: transform;
+	transition-property: transform;
+	transition-property: transform,-webkit-transform;
+
+	/* text-align: center;*/
+	/* Center slide text vertically 
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center; */
+  }
+
+  .menu {
+	min-width: 100px;
+	width: 70%;
+	max-width: 320px;
+	background-color: #87F5F8;
+	color: #fff;
+  }
+  .content {
+	width: 100%;
+	height: 90vh;
+  }
+  .menu-button {
+	position: absolute;
+	top: 0px; left: 0px;
+	padding: 15px;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	transition: .3s;
+	background-color: #39454A;
+	z-index: 999999;
+	/*margin: 14px;
+	border-radius: 5px;*/
+  }
+  .menu-button .bar:nth-of-type(1) {
+	margin-top: 0px;
+  }
+  .menu-button .bar:nth-of-type(3) {
+	margin-bottom: 0px;
+  }
+  .bar {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 3px;
+	margin: 3px auto;
+	background-color: #87F5F8;
+	border-radius: 10px;
+	-webkit-transition: .3s;
+	transition: .3s;
+  }
+
+  .menu-button:hover{
+	background-color: #93BEDF;
+  }
+
+  .menu-button.cross{
+	background-color: #87F5F8;
+  }
+
+  .menu-button.cross .bar{
+	background-color: #39454A;
+  }
+
+  .menu-button:hover .bar:nth-of-type(1) {
+	-webkit-transform: translateY(1.5px) rotate(-4.5deg);
+	-ms-transform: translateY(1.5px) rotate(-4.5deg);
+	transform: translateY(1.5px) rotate(-4.5deg);
+  }
+  .menu-button:hover .bar:nth-of-type(2) {
+	opacity: .9;
+  }
+  .menu-button:hover .bar:nth-of-type(3) {
+	-webkit-transform: translateY(-1.5px) rotate(4.5deg);
+	-ms-transform: translateY(-1.5px) rotate(4.5deg);
+	transform: translateY(-1.5px) rotate(4.5deg);
+  }
+  .cross .bar:nth-of-type(1) {
+	-webkit-transform: translateY(6px) rotate(-45deg);
+	-ms-transform: translateY(6px) rotate(-45deg);
+	transform: translateY(6px) rotate(-45deg);
+  }
+  .cross .bar:nth-of-type(2) {
+	opacity: 0;
+  }
+  .cross .bar:nth-of-type(3) {
+	-webkit-transform: translateY(-6px) rotate(45deg);
+	-ms-transform: translateY(-6px) rotate(45deg);
+	transform: translateY(-6px) rotate(45deg);
+  }
+  .cross:hover .bar:nth-of-type(1) {
+	-webkit-transform: translateY(5.5px) rotate(-40.5deg);
+	-ms-transform: translateY(5.5px) rotate(-40.5deg);
+	transform: translateY(5.5px) rotate(-40.5deg);
+  }
+  .cross:hover .bar:nth-of-type(2) {
+	opacity: .1;
+  }
+  .cross:hover .bar:nth-of-type(3) {
+	-webkit-transform: translateY(-6.5px) rotate(40.5deg);
+	-ms-transform: translateY(-6.5px) rotate(40.5deg);
+	transform: translateY(-6.5px) rotate(40.5deg);
+  }
+
+  .cover-background {
+	position: relative !important;
+	background-size: cover !important;
+	overflow: hidden !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+  }
+
+  .swiper-slide h1{
+	color: #fff;
+	font-weight: 500;
+	font-size: 3em;
+  }
+
+  .intro{
+	display: inline;
+	text-align: left;
+	margin-left: 3%;
+  }
+
+  .intro p{
+	color:#bdf9fb;
+	font-weight: 200;
+	font-size: 1.5em;
+  }
+  
+  .cover-background button{
+	background: none;
+	padding: 0;
+	font-weight: 500;
+	border: none;
+	color: #fff;
+  }
+
+  .cover-background button:hover{
+	color: #bdf9fb;
+  }
+
+  .position-absolute {
+	position: absolute !important;
+	bottom: 130px;
+	z-index: 5;
+	width: 100%;
+	overflow: visible;
+	margin: 0;
+	text-align: center;
+  }
+
+  .subtitle{
+	color: #fff;
+	letter-spacing: 3px;
+  }
+
+  .skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.8);
+}
